@@ -1,0 +1,35 @@
+@import 'bootstrap/scss/bootstrap';
+
+#top-bar {
+  height: 4rem;
+  width: 100%;
+}
+
+#offcanvas-wrapper {
+  display: flex;
+  min-height: calc(100vh - 4rem - 5rem);
+}
+
+#offcanvas-nav {
+  transition: width 0.3s;
+
+  width: 15rem;
+
+  & + #content {
+    transition: width 0.3s;
+
+    width: calc(100% - 15rem);
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 10rem;
+
+    & + #content {
+      width: calc(100% - 10rem);
+    }
+  }
+}
+
+#footer {
+  height: 5rem;
+}

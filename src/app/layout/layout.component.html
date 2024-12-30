@@ -1,0 +1,17 @@
+<nav id="top-bar">
+  <app-top-bar></app-top-bar>
+</nav>
+
+<div #offcanvasWrapper id="offcanvas-wrapper">
+  <nav id="offcanvas-nav">
+    <app-sidebar></app-sidebar>
+  </nav>
+  
+  <main id="content" class="container-fluid">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<footer id="footer">
+  <app-footer></app-footer>
+</footer>
